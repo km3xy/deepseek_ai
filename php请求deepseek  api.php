@@ -1,5 +1,5 @@
 <?php
-$apiKey = "sk-9cd06806a978466a98ff5b3eb6cd6664";
+$apiKey = "自己的deepseek  api";
 $apiUrl = "https://api.deepseek.com/v1/chat/completions";
 
 $headers = [
