@@ -24,7 +24,9 @@ deepseek  api
 浏览器限制，ksweb  + 本地浏览器 ,
 
 
-chatgpt   api   google浏览器+ksweb  +快连VPN
+chatgpt   api   最好使用  google浏览器+ksweb 或者termux
++快连VPN，由于地域限制本地国内浏览器，以及俄罗斯搜索
+引擎浏览器，会出现无反应  API没有返回数据的问题，
 
 
 
