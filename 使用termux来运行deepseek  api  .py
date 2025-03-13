@@ -1,12 +1,8 @@
 
-
 使用termux安装依赖
 
 pkg install python
 pip install requests rich
-
-
-
 
 
 
@@ -68,3 +64,14 @@ while True:
 
 # 🎉 结束
 console.print(Panel.fit("🎉 对话已结束，欢迎下次使用！", style="bold yellow"))
+
+
+
+
+
+
+
+
+
+
+
