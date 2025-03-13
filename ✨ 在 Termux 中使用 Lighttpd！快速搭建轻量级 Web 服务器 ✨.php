@@ -189,6 +189,20 @@ chmod 755 $PREFIX/var/www/html
 特点：无需安装额外软件，适合临时文件共享。
 
 启动服务：
+ 
+# Python 3
+python -m http.server 8080 --directory ~/my-site
+
+# 启用目录列表
+python -m http.server 8080 --directory ~/my-site --bind 0.0.0.0
+
+
+适用场景：快速分享本地文件或测试静态页面。
+优点：无需配置，即开即用。
+缺点：性能差，仅支持基础 GET 请求。
+
+
+
 
 
 
