@@ -123,6 +123,28 @@ curl http://localhost:8080
 在  lighttpd.conf  中添加：
 
 
+(nginx)
+
+ 
+dir-listing.activate = "enable"
+dir-listing.encoding = "utf-8"
+
+
+
+(nginx)
+ 
+
+设置虚拟主机
+
+
+ 
+$HTTP["host"] == "termux.local" {
+  server.document-root = "${prefix}/var/www/termux-site"
+}
+ 
+
+
+
 
 
 
