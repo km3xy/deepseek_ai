@@ -5,6 +5,31 @@
 首先，安装Termux，用户可能已经安装了，但可能需要确认。然后更新包列表和升级现有包，这通常用pkg update和pkg upgrade。接着安装Lighttpd，应该用pkg install lighttpd。安装完成后，可能需要配置，比如修改lighttpd.conf文件，设置文档根目录，端口号，以及可能的模块启用。
 
 然后启动服务器，可能需要检查配置文件是否正确，使用lighttpd -t -f /path/to/config，之后启动服务。测试的话，可以用curl或者浏览器访问localhost:PORT，默认是80，但Termux可能限制低端口，可能需要改到比如8080。
+在 Termux 中使用 Lighttpd 搭建 Web 服务器的完整指南如下：
+
+ 
+
+📱 准备工作
+
+安装 Termux
+从 F-Droid 下载并安装 Termux（Google Play 版本可能已过时）。Google商店里才是最新最好用的，去Google商店里下载
+
+
+更新系统
+
+
+pkg update -y && pkg upgrade -y
+ 
+
+ 
+
+🔧 安装与配置 Lighttpd
+
+1. 安装 Lighttpd
+
+
+
+ 
 
 
 
