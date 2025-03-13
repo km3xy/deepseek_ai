@@ -52,3 +52,28 @@ python hello.py
  github      open ai  代码库里有  完整的termux教程
 
 
+必须先开启文件访问权限
+
+
+termux-setup-storage
+  
+
+手动开启 Android 权限
+
+如果  termux-setup-storage  未触发权限弹窗，可手动开启：
+
+进入 Android 设置：
+
+打开手机 设置 → 应用管理 → Termux。
+开启存储权限：
+
+找到 权限（Permissions） → 开启 存储（Storage） 或 文件和媒体（Files & Media）。
+
+
+
+
+
+
+
+
+  
