@@ -27,9 +27,106 @@ pkg update -y && pkg upgrade -y
 
 1. 安装 Lighttpd
 
+pkg install lighttpd -y
+ 
+ 
+2. 创建网站根目录
+
+mkdir -p $PREFIX/var/www/html
+echo "Hello from Termux!" > $PREFIX/var/www/html/index.html
+
+
+3. 修改配置文件
+
+
+ 
+nano $PREFIX/etc/lighttpd/lighttpd.conf
+
+
+
+ 调整以下关键配置项
+
+
+nginx
+
+  
+# 监听端口（Termux 默认允许 8080+）
+server.port = 8080
+
+# 文档根目录
+server.document-root = "${prefix}/var/www/html"
+
+# 启用必要模块
+server.modules = (
+  "mod_access",
+  "mod_accesslog"
+)
+
+# 日志路径
+accesslog.filename = "${prefix}/var/log/lighttpd/access.log"
+
+
+
+ 4. 创建日志目录
+
+
+ 
+mkdir -p $PREFIX/var/log/lighttpd
+touch $PREFIX/var/log/lighttpd/{access,error}.log
+
+
+
+ 🚀 启动服务器
+
+1. 测试配置
+
+    
+lighttpd -t -f $PREFIX/etc/lighttpd/lighttpd.conf
+
+ 
+ 若显示  Syntax OK  则配置正确。
+
+2. 启动服务
+
+    
+lighttpd -D -f $PREFIX/etc/lighttpd/lighttpd.conf
+ 
+
+ -D  表示保持前台运行（按  Ctrl+C  停止）。
+
+3. 后台运行
+   
+
+nohup lighttpd -f $PREFIX/etc/lighttpd/lighttpd.conf &
+
+
+
+🌐 测试访问
+
+本地访问
+Termux 内执行：
+
+ 
+curl http://localhost:8080
+ 
+
+或手机浏览器访问  http://localhost:8080 。
+局域网访问
+查找手机的内网 IP（如  192.168.x.x ），同一网络下的设备访问  http://手机IP:8080 。
+
+ 
+
+⚙️ 进阶配置
+
+启用目录列表
+
+在  lighttpd.conf  中添加：
+
+
+
 
 
  
-
+ 
 
 
