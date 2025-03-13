@@ -145,6 +145,43 @@ $HTTP["host"] == "termux.local" {
 
 
 
+启用 SSL (自签名证书)
+
+生成证书：
+ 
+pkg install openssl-tool
+openssl req -x509 -newkey rsa:4096 -nodes -keyout key.pem -out cert.pem -days 365
+ 
+修改配置：
+ 
+$SERVER["socket"] == ":8443" {
+  ssl.engine = "enable"
+  ssl.pemfile = "${prefix}/etc/lighttpd/cert.pem"
+}
+ 
+
+ 
+
+
+⚠️ 注意事项
+
+Termux 后台限制
+确保 Termux 在后台不被系统清理（设置电池优化白名单）。
+防火墙与路由
+
+手机防火墙需允许 8080 端口。
+外网访问需路由器端口转发并配置动态 DNS。
+文件权限
+若遇到权限错误，执行：
+
+ 
+chmod 755 $PREFIX/var/www/html
+ 
+日志管理
+定期清理日志文件防止占用过多存储。
+
+
+
 
 
 
