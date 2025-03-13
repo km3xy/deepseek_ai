@@ -1,4 +1,10 @@
+termux创建文件夹
+
 1. 创建目标目录首先，确保你在内置存储中创建了一个新的目录：
+
+
+
+
 
 mkdir -p /storage/emulated/0/termux_files
 
