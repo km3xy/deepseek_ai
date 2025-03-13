@@ -3,6 +3,19 @@
 
 使用谷歌商店里下载的  chatbox   app   无需关闭vpn  可以直接使用自己的deepseek   api
 
+如果出现地域限制
+
+chatbox   以及问小白 里的deepseek   有可能会收不到返回数据，
+
+
+🤖 AI: ⚠️ API返回数据异常
+👤 你: 您好
+🤖 AI: ⚠️ API返回数据异常
+
+
+
+网络错误：Operation timed out after 15000 milliseconds with 0 bytes received
+
 
 
 
@@ -30,5 +43,11 @@ api    也可以用自己的chagpt   的api，
 
 
 还可以使用小红书风格来写代码，聊天，
+
+
+
+
+
+
 
 
