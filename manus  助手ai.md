@@ -1,6 +1,10 @@
 manus
 
 
+https://manus.im/
+
+
+
 Leave it to Manus
 
 Manus 是一款通用型 AI 助手，能将想法转化为行动：不止于思考，
@@ -12,6 +16,24 @@ Manus 是一款通用型 AI 助手，能将想法转化为行动：不止于思�
 
 
 https://manus.im/
+
+
+
+
+
+trae国际版: https://www.trae.ai/home 
+
+
+trae国内版:https://www.trae.com.cn/ 
+
+
+
+
+
+
+
+
+
 
 
 
